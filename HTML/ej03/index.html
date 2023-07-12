@@ -10,10 +10,19 @@
             margin-top: 20px;         
            
         }
-        .inputLabel , .listBoxLabel{                     
+        .inputLabel , .radioLabel {                     
             margin-left: 10px;           
         }
-        .bloqueDatos{
+
+        .radioLabel>input{
+            margin:auto;
+        }
+
+        /*.inputLabel>label{
+            text-align: center;
+        }*/
+
+        .bloqueDatos {
             display: flex;     
             margin-top: 20px;       
             margin-left: 10px;
@@ -23,6 +32,8 @@
         div.bloqueDatos>div>*{
             display: block;
         }
+
+        
         
     </style>
 </head>
@@ -108,8 +119,8 @@
             </div>
         </div>
 
-        <div id="selectCountry" class="bloqueDatos">
-            <div class="listBoxLabel">
+        <div id="pais" class="bloqueDatos">
+            <div class="inputLabel">
                 <label for="selectPais">Introduzca el pais</label>
                 <select id="selectPais" name="selectPais">
                     <option value="Spain">España</option>
@@ -119,6 +130,30 @@
                 </select>           
             </div>
         </div>
+
+        <div id="cuenta" class="bloqueDatos">
+            
+                <div class="radioLabel">
+                    <label for="radioCuenta1">Gratuita</label>
+                    <input id="radioCuenta1" name="radioCuenta1" type="radio" >
+                </div>
+                <div class="radioLabel">
+                    <label for="radioCuenta2">Básica</label>
+                    <input id="radioCuenta2" name="radioCuenta1" type="radio" >
+                </div>
+                <div class="radioLabel">
+                    <label for="radioCuenta3">Premium</label>
+                    <input id="radioCuenta3" name="radioCuenta1" type="radio" >
+                </div>         
+                
+                <div class="radioDescripcion">
+                    <label for="descripcionCuenta">Descripcion</label>
+                    <p id="descripcionCuenta" name="descripcionCuenta" type="radio" >
+                </div>
+        </div>
+
+            
+        
         
         
 
