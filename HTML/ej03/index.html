@@ -31,11 +31,11 @@
         <div id="nombre" class="bloqueDatos">
             <div class="inputLabel">
                 <label for="inputNombre">Nombre</label>
-                <input id="inputNombre" type="text">            
+                <input id="inputNombre" name="inputNombre" type="text">            
             </div>
             <div class="inputLabel">
                 <label for="inputApellidos">Apellidos</label>
-                <input id="inputApellidos" type="text">
+                <input id="inputApellidos" name="inputApellidos" type="text">
             </div>
         </div>
         
@@ -43,41 +43,48 @@
         <div id="direccion" class="bloqueDatos">
             <div class="inputLabel">
                 <label for="inputTipoVia">Tipo de Via</label>
-                <input id="inputTipoVia" type="text">
+                <input id="inputTipoVia" name="inputTipoVia" type="text">
             </div>
             <div class="inputLabel">
                 <label for="inputNombreVia">Nombre</label>
-                <input id="inputNombreVia" type="text">
+                <input id="inputNombreVia" name="inputNombreVia" type="text">
             </div>
             <div class="inputLabel">
                 <label for="inputCP">Codigo Postal</label>
-                <input id="inputCP" type="text">
+                <input id="inputCP" name="CP" type="text">
             </div>
             <div class="inputLabel">
                 <label for="inputCiudad">Ciudad</label>
-                <input id="inputCiudad" type="text">
+                <input id="inputCiudad" name="inputCiudad" type="text">
             </div>
             <div class="inputLabel">
                 <label for="inputProvincia">Provincia</label>
-                <input id="inputProvincia" type="text">
+                <input id="inputProvincia" name="inputProvincia" type="text">
             </div>    
             <div class="inputLabel">
                 <label for="inputPais">Pais</label>
-                <input id="inputPais" type="text">
+                <input id="inputPais" name="inputPais" type="text">
             </div>           
         </div>
 
         <div id="fecha" class="bloqueDatos">
             <div class="inputLabel">
                 <label for="inputFecha">Fecha Nacimiento</label>
-                <input id="inputFecha" type="date">
+                <input id="inputFecha" name="inputFecha" type="date">
             </div>
         </div>
 
         <div id="Nota" class="bloqueDatos">
             <div class="inputLabel">
-                <label for="inputNota">Fecha Nacimiento</label>
-                <input id="inputNota" type="number" max="10" min="0" step="0.1">
+                <label for="inputNota">Nota Media</label>
+                <input id="inputNota" name="inputNota" type="number" max="10" min="0" step="0.1">
+            </div>
+        </div>
+
+        <div id="Nota" class="bloqueDatos">
+            <div class="inputLabel">
+                <label for="inputPhone">Telefono</label>
+                <input id="inputPhone" name="inputPhone" type="tel" maxlength="10" pattern="+[0-9]{2} [0-9]{9}">
             </div>
         </div>
         
