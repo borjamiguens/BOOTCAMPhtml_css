@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio03</title>
+    <style>
+        #nombre{
+            display: flex;   
+            margin-top: 20px;         
+           
+        }
+        .inputLabel{                     
+            margin-left: 10px;           
+        }
+        .bloqueDatos{
+            display: flex;     
+            margin-top: 20px;       
+            margin-left: 10px;
+            
+        }
+        
+        div.bloqueDatos>div>*{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <div id="nombre" class="bloqueDatos">
+            <div class="inputLabel">
+                <label for="inputNombre">Nombre</label>
+                <input id="inputNombre" type="text">            
+            </div>
+            <div class="inputLabel">
+                <label for="inputApellidos">Apellidos</label>
+                <input id="inputApellidos" type="text">
+            </div>
+        </div>
+        
+        
+        <div id="direccion" class="bloqueDatos">
+            <div class="inputLabel">
+                <label for="inputTipoVia">Tipo de Via</label>
+                <input id="inputTipoVia" type="text">
+            </div>
+            <div class="inputLabel">
+                <label for="inputNombreVia">Nombre</label>
+                <input id="inputNombreVia" type="text">
+            </div>
+            <div class="inputLabel">
+                <label for="inputCP">Codigo Postal</label>
+                <input id="inputCP" type="text">
+            </div>
+            <div class="inputLabel">
+                <label for="inputCiudad">Ciudad</label>
+                <input id="inputCiudad" type="text">
+            </div>
+            <div class="inputLabel">
+                <label for="inputProvincia">Provincia</label>
+                <input id="inputProvincia" type="text">
+            </div>    
+            <div class="inputLabel">
+                <label for="inputPais">Pais</label>
+                <input id="inputPais" type="text">
+            </div>           
+        </div>
+
+        <div id="fecha" class="bloqueDatos">
+            <div class="inputLabel">
+                <label for="inputFecha">Fecha Nacimiento</label>
+                <input id="inputFecha" type="date">
+            </div>
+        </div>
+
+        <div id="Nota" class="bloqueDatos">
+            <div class="inputLabel">
+                <label for="inputNota">Fecha Nacimiento</label>
+                <input id="inputNota" type="number" max="10" min="0" step="0.1">
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>
