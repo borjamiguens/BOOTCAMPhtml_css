@@ -22,7 +22,7 @@
             text-align: center;
         }*/
 
-        .bloqueDatos {
+        .bloqueDatos, .radioDescripcion {
             display: flex;     
             margin-top: 20px;       
             margin-left: 10px;
@@ -32,6 +32,38 @@
         div.bloqueDatos>div>*{
             display: block;
         }
+
+        #cuenta {
+            display:block;
+        }
+        
+        #descripcionCuenta1{
+            /*display: none;*/
+            visibility: hidden;
+        }
+        #radioCuenta1:checked + #descripcionCuenta1  {
+            visibility:visible;
+        }
+
+        #descripcionCuenta2{
+            /*display: none;*/
+            visibility: hidden;
+        }
+        #radioCuenta2:checked + #descripcionCuenta2 {
+            visibility:visible;
+        }
+
+        #descripcionCuenta3{
+            /*display: none;*/
+            visibility: hidden;
+        }
+        #radioCuenta3:checked + #descripcionCuenta3 {
+            visibility:visible;
+        }
+
+        
+
+        
 
         
         
@@ -132,24 +164,28 @@
         </div>
 
         <div id="cuenta" class="bloqueDatos">
-            
+            <div class="bloqueRadio">
                 <div class="radioLabel">
                     <label for="radioCuenta1">Gratuita</label>
-                    <input id="radioCuenta1" name="radioCuenta1" type="radio" >
-                </div>
-                <div class="radioLabel">
+                    <input id="radioCuenta1" name="radioCuenta1" type="radio" >                       
+                    <p id="descripcionCuenta1" name="descripcionCuenta1">Descripcion cuenta gratuita</p>
+                    
                     <label for="radioCuenta2">Básica</label>
-                    <input id="radioCuenta2" name="radioCuenta1" type="radio" >
-                </div>
-                <div class="radioLabel">
+                    <input id="radioCuenta2" name="radioCuenta1" type="radio" >                    
+                
                     <label for="radioCuenta3">Premium</label>
                     <input id="radioCuenta3" name="radioCuenta1" type="radio" >
+                    
+                    
+                    <p id="descripcionCuenta2" name="descripcionCuenta2">Descripcion cuenta basica</p>
+                    <p id="descripcionCuenta3" name="descripcionCuenta3">Descripcion cuenta premium</p>
+                    
+                                       
+                    
+                    
                 </div>         
+            </div>                 
                 
-                <div class="radioDescripcion">
-                    <label for="descripcionCuenta">Descripcion</label>
-                    <p id="descripcionCuenta" name="descripcionCuenta" type="radio" >
-                </div>
         </div>
 
             
