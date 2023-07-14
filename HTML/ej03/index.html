@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicio03</title>
     <style>
+
+        
         #nombre{
             display: flex;   
             margin-top: 20px;         
            
         }
         .inputLabel , .radioLabel {                     
-            margin-left: 10px;           
+            margin-right: 10px;           
         }
 
         .radioLabel>input{
             margin:auto;
         }
+        
 
-        /*.inputLabel>label{
-            text-align: center;
-        }*/
-
-        .bloqueDatos, .radioDescripcion {
+        .bloqueDatos, .radioDescripcion , .tituloSeccion , .bloqueRadio,  #submit{
             display: flex;     
             margin-top: 20px;       
             margin-left: 10px;
             
         }
+
+        .tituloSeccion{
+            margin-top: 50px; 
+        }
         
-        /* div.bloqueDatos>div>*{
+        div.bloqueDatos>div>*{
             display: block;
         }
 
-        #cuenta {
+        #cuenta, #info, #foto, #cv {
             display:block;
         }
-        
+                
         #descripcionCuenta1{
             
             visibility: hidden;
@@ -59,17 +62,13 @@
         }
         #radioCuenta3:checked + #descripcionCuenta3 {
             visibility:visible;
-        } */
+        }
         
-
-        .radioLabel p:nth-of-type(1n){
-            /*display: none;*/
+        
+        /* .radioLabel p:nth-of-type(n){
+            display: none;
             visibility: hidden;
-        }
-        .radioLabel input:nth-of-type(1n):checked + p {
-            visibility:visible;
-        }
-
+        } */
         
 
         
@@ -172,7 +171,10 @@
             </div>
         </div>
 
-        <div id="cuenta" class="bloqueDatos">
+        
+
+        <div  id="cuenta" class="bloqueDatos">   
+            <div class="tituloSeccion">Tipo de cuenta</div>         
             <div class="bloqueRadio">
                 <div class="radioLabel">
                     <label for="radioCuenta1">Gratuita</label>
@@ -181,30 +183,38 @@
                     
                     <label for="radioCuenta2">Básica</label>
                     <input id="radioCuenta2" name="radioCuenta1" type="radio" > 
-                    <p id="descripcionCuenta2" name="descripcionCuenta1">Descripcion cuenta basica</p>                   
+                    <p id="descripcionCuenta2" name="descripcionCuenta2">Descripcion cuenta basica</p>                   
                 
                     <label for="radioCuenta3">Premium</label>
-                    <input id="radioCuenta3" name="radioCuenta1" type="radio" >
-                    <p id="descripcionCuenta3" name="descripcionCuenta1">Descripcion cuenta premium</p>
-                    
-                    
-                    
-                    
-                    
-                                       
-                    
+                    <input id="radioCuenta3" name="radioCuenta1" type="radio" >            
+                    <p id="descripcionCuenta3" name="descripcionCuenta3">Descripcion cuenta premium</p>
                     
                 </div>         
             </div>                 
                 
         </div>
 
-            
+        <div  id="info" class="bloqueDatos">   
+            <div class="tituloSeccion">Sobre mi</div>         
+            <p>
+                Hola, mi nombre es borja y <br> 
+                esta es mi descripcioón
+            </p>           
+        </div>
         
-        
-        
+        <div  id="foto" class="bloqueDatos">   
+            <div class="tituloSeccion">Foto</div>         
+            <image src="../../images/fotoBorja.jpg" alt="foto personal"></image>         
+        </div>
 
-        
+        <div  id="cv" class="bloqueDatos">  
+            <div class="tituloSeccion">CV</div>     
+            <br>
+            <input type="file"   accept="application/pdf" >   
+                              
+        </div>
+
+        <button id="submit" type="submit" formmethod="post">Enviar</button>
         
     </form>
 </body>
